@@ -3,18 +3,18 @@ import styles from "./Item.module.css";
 
 export interface IT {
     isOpen: boolean,
-    to?: string,
-    text: string,
+    to: string,
+    toolTip: string,
     icon: React.JSX.Element,
 };
 
-export const Item = ({ icon, text, to, isOpen }: IT) => {
+export const Item = ({ icon, toolTip, to, isOpen }: IT) => {
     return (
         <NavLink
-            to={to!}
+            to={to}
             end
-            aria-label={text}
-            data-tooltip={!isOpen ? text : null}
+            aria-label={toolTip}
+            data-tooltip={!isOpen ? toolTip : null}
             className={({ isActive }) => 
                 `${styles.item} 
                 ${isActive ? styles.active : ""}`
@@ -26,7 +26,7 @@ export const Item = ({ icon, text, to, isOpen }: IT) => {
             >
                 {icon}
             </span>
-            {isOpen && <span>{text}</span>}
+            {isOpen && <span>{toolTip}</span>}
         </NavLink>
     );
 };

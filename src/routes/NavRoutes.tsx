@@ -7,6 +7,8 @@ import { Home } from "../pages/Home";
 import { Favorites } from "../pages/Favorites";
 import { Help } from "../pages/Help";
 import { Library } from "../pages/Library";
+import { Calendar } from "../pages/Calendar";
+import { Analytics } from "../pages/Analytics";
 
 const RouteList = createBrowserRouter([
     {
@@ -19,12 +21,20 @@ const RouteList = createBrowserRouter([
                 element: <Home />
             },
             {
+                path: "/analytics",
+                element: <Analytics />
+            },
+            {
                 path: "/favorites",
                 element: <Favorites />
             },
             {
                 path: "/help",
                 element: <Help />
+            },
+            {
+                path: "/calendar",
+                element: <Calendar />
             },
             {
                 path: "/library",

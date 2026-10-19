@@ -1,0 +1,8 @@
+.page {
+    composes: page from "./Page.module.css";
+}
+
+.title {
+    composes: title from "./Page.module.css";
+    background-color: var(--plum);
+}

@@ -6,12 +6,12 @@ import { Navbar } from "../routes/Navbar";
 export const App = () => {
     return (
         <React.Fragment>
-            <section className={classes.app}>
+            <div className={classes.app}>
                 <Navbar />
-                <main className={classes.content}>
+                <div className={classes.content}>
                     <Outlet />
-                </main>
-            </section>
+                </div>
+            </div>
         </React.Fragment>
     );
 };

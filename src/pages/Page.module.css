@@ -1,0 +1,24 @@
+.page {
+    display: grid;
+    grid-template-columns: 1in minmax(0, 1fr) 1in;
+    align-content: start;
+    row-gap: 1rem;
+    min-width: 0;
+    padding-top: 0.5in;
+}
+
+.title {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin: 0;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+}
+
+.page > p {
+    grid-column: 2;
+    margin: 0;
+    overflow-wrap: anywhere;
+}

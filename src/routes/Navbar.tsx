@@ -34,7 +34,7 @@ export const Navbar = () => {
                         <Item 
                             key={item.id}
                             icon={item.icon}
-                            text={item.text}
+                            toolTip={item.toolTip}
                             to={item.path}
                             isOpen={isOpen}         
                         />

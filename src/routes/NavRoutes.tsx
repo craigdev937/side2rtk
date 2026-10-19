@@ -1,3 +1,4 @@
+import React from "react";
 import { createBrowserRouter, 
     RouterProvider } from "react-router";
 import { NotFound } from "../components/NotFound";
@@ -35,7 +36,9 @@ const RouteList = createBrowserRouter([
 
 export const NavRoutes = () => {
     return (
-        <RouterProvider router={RouteList} />
+        <React.Fragment>
+            <RouterProvider router={RouteList} />
+        </React.Fragment>
     );
 };
 

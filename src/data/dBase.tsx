@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 
 export type MENU = {
-    id?: number,
+    id: number,
     icon: React.JSX.Element,
     text: string,
     path: string

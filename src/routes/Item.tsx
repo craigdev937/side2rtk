@@ -1,10 +1,11 @@
 import { NavLink } from "react-router";
 import styles from "./Item.module.css";
-import type { MENU } from "../data/dBase";
 
-export interface IT extends MENU {
+export interface IT {
     isOpen: boolean,
-    to?: string
+    to?: string,
+    text: string,
+    icon: React.JSX.Element,
 };
 
 export const Item = ({ icon, text, to, isOpen }: IT) => {

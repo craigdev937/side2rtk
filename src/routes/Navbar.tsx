@@ -32,12 +32,11 @@ export const Navbar = () => {
                 >
                     {menuItems.map((item) => (
                         <Item 
-                            key={item.path}
+                            key={item.id}
                             icon={item.icon}
                             text={item.text}
-                            to={item.path!}
-                            isOpen={isOpen} 
-                            path={""}               
+                            to={item.path}
+                            isOpen={isOpen}         
                         />
                     ))}
                 </nav>
